@@ -1,0 +1,172 @@
+html { 
+    height: 100%;  
+    width: 100%; 
+} 
+
+#BarreNavigation {
+    display: grid; 
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px; 
+    grid-template-areas:  
+    " . Gmail Images Menu Connexion";
+    margin: 0 10px 0 20px;
+} 
+ 
+a, p { 
+    text-decoration: none; 
+    color: rgba(0,0,0,0.87); 
+    font-size: 13px; 
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+a:hover { 
+    text-decoration: underline; 
+} 
+ 
+#Gmail { 
+    grid-area: Gmail; 
+    justify-self: center; 
+    align-self: center; 
+} 
+#Images {
+    grid-area: Images;
+    justify-self: center; 
+    align-self: center; 
+    margin-right: 10px; 
+} 
+#Menu {
+    grid-area: Menu;
+    justify-self: center; 
+    align-self: center; 
+    margin-right: 20px; 
+} 
+#Connexion {
+    grid-area: Connexion;
+    justify-self: center; 
+    align-self: center; 
+    background-color: #4683ea; 
+    height: 30px; 
+    width: 73px; 
+    line-height: 30px; 
+    text-align: centeR; 
+    color: white;  
+    font-weight: bold; 
+    border: 1px solid #4285f4; 
+} 
+
+#Milieu {
+    min-height: 100%; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 250px 70px 70px 250px; 
+    grid-template-areas:  
+    ". GoogleLogo ."
+    ". Recherche ."
+    ". Flexbox ."
+    ". GoogleTexte .";
+} 
+ 
+#GoogleLogo {
+    grid-area: GoogleLogo; 
+    justify-self: center; 
+    align-self: end; 
+} 
+#Recherche {
+    grid-area: Recherche;
+    height: 30px;  
+    width: 80%; 
+    align-self: center; 
+    justify-self: center; 
+    border: 1px solid rgba(0, 0, 0, 0.151); 
+    border-radius: 30px; 
+} 
+ 
+#Recherche:focus {
+    box-shadow: 1px 1px 5px grey; 
+} 
+#Recherche:hover {
+    box-shadow: 1px 1px 5px grey; 
+} 
+ 
+#Flexbox {
+    display: Flexbox;
+    grid-area: Flexbox;
+    justify-self: center; 
+    align-self: center; 
+} 
+#RechercheBouton { 
+    border: none; 
+    font-size: 15px; 
+    color: #5F6368; 
+    margin-right: 25px; 
+    padding: 7px 15px 7px 15px; 
+    border-radius: 3px; 
+} 
+#ChanceBouton {
+    border: none; 
+    font-size: 15px;  
+    color: #5F6368; 
+    padding: 7px 15px 7px 15px; 
+    border-radius: 3px; 
+} 
+#RechercheBouton:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226); 
+} 
+#ChanceBouton:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226); 
+} 
+ 
+#GoogleTexte {
+    grid-area: GoogleTexte;
+    justify-self: center; 
+}
+
+#Bas {
+    position: absolute; 
+    bottom: 0;  
+    display: grid; 
+    grid-template-columns: 100px 100px 100px 250px 400px 150px 100px 100px 100px;
+    grid-template-rows: 50px; 
+    grid-template-areas:  
+    "Publicité Entreprise Apropos Comment . InfoConsos Confidentialité Conditions Paramètres"; 
+} 
+ 
+#Publicité {
+    grid-area: Publicité;
+    justify-self: center; 
+    align-self: center; 
+} 
+#Entreprise {
+    grid-area: Entreprise;
+    justify-self: center; 
+    align-self: center; 
+}
+#Apropos {
+    grid-area: Apropos;
+    justify-self: center;
+    align-self: center;
+} 
+#Comment {
+    grid-area: Comment;
+    justify-self: center; 
+    align-self: center; 
+} 
+#InfoConsos {
+    grid-area: InfoConsos;
+    justify-self: center; 
+    align-self: center; 
+} 
+#Confidentialité {
+    grid-area: Confidentialité;
+    justify-self: center; 
+    align-self: center; 
+} 
+#Conditions {
+    grid-area: Conditions;
+    justify-self: center; 
+    align-self: center; 
+} 
+#Paramètres {
+    grid-area: Paramètres;
+    justify-self: center;
+    align-self: center;
+}
